@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventsDetailsActivity">
+
+    <ImageView
+        android:id="@+id/event_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="0.5dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="0.5dp"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_below="@+id/event_image_details"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:drawableLeft="@drawable/eventname"
+            android:layout_marginTop="10dp"
+            android:id="@+id/event_name_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Name"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            ></TextView>
+
+        <TextView
+            android:drawableLeft="@drawable/eventdate"
+            android:layout_marginTop="10dp"
+            android:id="@+id/event_date_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Date"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            ></TextView>
+
+        <TextView
+            android:drawableLeft="@drawable/eventtime"
+            android:layout_marginTop="10dp"
+            android:id="@+id/event_time_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Time"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            ></TextView>
+
+        <TextView
+            android:drawableLeft="@drawable/locationevent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/event_location_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Location"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            ></TextView>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/event_pricedescription_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Pricedescription"
+                android:textColor="@color/colorMaroon"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginStart="119dp"
+                android:layout_gravity="center"
+                ></TextView>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KSH"
+                android:textColor="@color/colorMaroon"
+                android:textSize="20dp"
+                android:layout_marginStart="80dp"
+                android:layout_gravity="center"
+                ></TextView>
+        </RelativeLayout>
+
+
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/book_now"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_buttondd"
+            android:layout_gravity="center"
+            android:text="book now"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

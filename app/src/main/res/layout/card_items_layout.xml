@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d0d3d4"
+        >
+
+        <TextView
+            android:id="@+id/cardeventname"
+            android:layout_width="160dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:text="Event Name"
+            android:drawableLeft="@drawable/eventname"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/cardeventpricedescription"
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="Event Price"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorMaroon"/>
+
+        <TextView
+            android:id="@+id/cardeventlocation"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Event location"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:drawableLeft="@drawable/locationevent"
+            android:layout_below="@+id/cardeventname"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/cardeventdate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardeventlocation"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:text="Event Date"
+            android:textColor="@color/colorBlack"
+            android:drawableLeft="@drawable/eventdate"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/cardeventtime"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardeventlocation"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="8dp"
+            android:text="Event time"
+            android:textColor="@color/colorBlack"
+            android:drawableLeft="@drawable/eventtime"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:layout_marginBottom="5dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

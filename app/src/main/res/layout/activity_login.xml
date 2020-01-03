@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <LinearLayout
+        android:id="@+id/linearlogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/Imagelogin"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/calendar"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="45dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="55dp"
+            />
+        <EditText
+
+            android:drawableLeft="@drawable/studentnumber"
+            android:id="@+id/studentNoedittextlog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/colorBlack"
+            android:hint="StudentNo/(10-1000)"
+            android:inputType="text"
+            android:maxLength="7"
+            android:textAlignment="center"
+            android:paddingTop="30dp"/>
+
+        <EditText
+            android:drawableLeft="@drawable/password"
+            android:id="@+id/passwordedittextlog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:backgroundTint="@color/colorBlack"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:paddingTop="30dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonlogin"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_buttondd"
+            android:layout_gravity="center"
+            android:text="Login"
+            android:textSize="15dp"
+            android:textColor="@color/colorWhite"
+            />
+
+        <TextView
+            android:id="@+id/textforgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:textColor=" #16aee1"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/textjoinnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join Now"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/colorRed"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="150dp"/>
+        <TextView
+            android:id="@+id/textnotadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Admin"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/colorRed"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="150dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

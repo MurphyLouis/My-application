@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/ImageRegister"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/calendar"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join Now"
+            android:textSize="45dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="52dp"
+            />
+        <EditText
+            android:drawableLeft="@drawable/studentnumber"
+            android:id="@+id/studentNoedittextReg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/colorBlack"
+            android:hint="StudentNo/(10-1000)"
+            android:maxLength="7"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:paddingTop="30dp"/>
+
+        <EditText
+            android:drawableLeft="@drawable/password"
+            android:id="@+id/passworedittextReg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/colorBlack"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:paddingTop="30dp"/>
+        <EditText
+            android:drawableLeft="@drawable/personname"
+            android:id="@+id/nameedittextReg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/colorBlack"
+            android:hint="Name"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:paddingTop="30dp"/>
+        <EditText
+            android:drawableLeft="@drawable/phonenum"
+            android:id="@+id/phonenumberedittextReg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/colorBlack"
+            android:hint="PhoneNumber"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textAlignment="center"
+            android:paddingTop="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonjoin"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_buttondd"
+            android:layout_gravity="center"
+            android:text="Join"
+            android:textSize="15dp"
+            android:textColor="@color/colorWhite"
+            />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
